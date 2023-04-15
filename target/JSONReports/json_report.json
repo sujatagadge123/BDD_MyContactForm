@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-04-06T11:42:36.396Z",
+        "line": 10,
+        "name": "To validate login functionality",
+        "description": "",
+        "id": "login-feature;to-validate-login-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3964234100,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on login page",
+            "match": {
+              "location": "stepDefinitions.MyContactForm.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7147307400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User enters \"sen1\" and \"Asdf@1234\" and click on login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sen1\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Asdf@1234\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.MyContactForm.user_enters_and_and_click_on_login_button(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2095227500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Validate if login is sucessful",
+            "match": {
+              "location": "stepDefinitions.MyContactForm.validate_if_login_is_sucessful()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3359918800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs off",
+            "match": {
+              "location": "stepDefinitions.MyContactForm.user_logs_off()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/Features/login.feature",
+    "tags": []
+  }
+]
